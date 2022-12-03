@@ -11,13 +11,13 @@ catch
     Console.WriteLine("Ошибка выполнения");
 }
 
-//Функция подсчета количества цифр в числе
+//Функция подсчета разрядов в числе
 int CheckSumIndex(double Num)
 {
 double NumFract = Num;
 int CountMod=0;
 if(Num<0) Num=-Num;
-if(Num<1)
+if(Num<1)   //Считает разряды числе <1
 {
     CountMod++;
     goto Fract;
