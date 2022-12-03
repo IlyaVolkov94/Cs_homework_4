@@ -15,13 +15,12 @@ catch
 int CheckSumIndex(double Num)
 {
 double NumFract = Num;
-int CountFract = 0;
+int CountFract = -1;
 while(NumFract%10!=0)
 {
     NumFract*=10;
     CountFract++;
 }
-CountFract--;
 int CountMod=0;
 while(Num>=1)
 {
