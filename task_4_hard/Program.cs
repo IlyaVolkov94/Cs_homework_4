@@ -22,14 +22,14 @@ int CheckSumIndex(double Num)
         CountMod++;
         goto Fract;
     }
-    while (Num >= 1)
+    while (Num >= 1) //Считает разряды целого части вещественного числа
     {
         Num /= 10;
         CountMod++;
     }
 Fract:
     int CountFract = -1;
-    while (NumFract % 10 != 0)
+    while (NumFract % 10 != 0)  //Считает разряды дробной части вещественного числа
     {
         NumFract *= 10;
         CountFract++;
