@@ -2,10 +2,10 @@
 
 double NaturalPow(double Base, int Pow)
 {
-    double Res=1;
-    for(int i=0; i<Pow; i++)
+    double Res = 1;
+    for (int i = 0; i < Pow; i++)
     {
-        Res*=Base;
+        Res *= Base;
     }
     return Res;
 }
