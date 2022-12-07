@@ -1,16 +1,5 @@
 ﻿// Напишите программу, которая принимает на вход целое или дробное число и выдаёт количество цифр в числе.
 
-try
-{
-    Console.WriteLine("Введите число");
-    double Number = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine("Количество цифр в числе: " + CheckSumIndex(Number));
-}
-catch
-{
-    Console.WriteLine("Ошибка выполнения");
-}
-
 //Функция подсчета разрядов в числе
 int CheckSumIndex(double Num)
 {
@@ -35,4 +24,15 @@ Fract:
         CountFract++;
     }
     return CountMod + CountFract;
+}
+
+try
+{
+    Console.WriteLine("Введите число");
+    double Number = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Количество цифр в числе: " + CheckSumIndex(Number));
+}
+catch
+{
+    Console.WriteLine("Ошибка выполнения");
 }

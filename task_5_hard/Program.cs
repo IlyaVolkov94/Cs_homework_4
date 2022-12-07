@@ -1,12 +1,6 @@
 ﻿// Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке
 //Далее надо посчитать количество нулей и единиц, если единиц больше чем нулей то вывести TRUE на экран, иначе вывести False.
 
-Console.WriteLine("Массив:");
-int Size = 8;
-if (CheckEqual(RandomArray(Size))) Console.WriteLine("TRUE");
-else Console.WriteLine("False");
-
-
 int[] RandomArray(int Arg)  //Создает произвольно заполненный массив
 {
     int[] Array = new int[Arg];
@@ -33,4 +27,17 @@ bool CheckEqual(int[] Array)    //Если в массиве единиц бол
         return true;
     else
         return false;
+}
+
+try
+{
+    Console.WriteLine("Массив:");
+    int Size = 8;
+    if (CheckEqual(RandomArray(Size))) Console.WriteLine("TRUE");
+    else Console.WriteLine("False");
+}
+
+catch
+{
+    Console.WriteLine("Ошибка выполнения");
 }

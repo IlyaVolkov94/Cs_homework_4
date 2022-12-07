@@ -24,7 +24,15 @@ int SumDigit(int Num)
     return NumBuf;
 }
 
-Console.WriteLine("Введите число");
-int Number = Convert.ToInt32(Console.ReadLine());
-int Sum = SumDigit(Number);
-Console.WriteLine("Сумма разрядов числа равна: " + Sum);
+try
+{
+    Console.WriteLine("Введите число");
+    int Number = Convert.ToInt32(Console.ReadLine());
+    int Sum = SumDigit(Number);
+    Console.WriteLine("Сумма разрядов числа равна: " + Sum);
+}
+
+catch
+{
+    Console.WriteLine("Ошибка выполнения");
+}
